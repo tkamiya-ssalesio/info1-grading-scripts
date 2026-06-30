@@ -441,7 +441,7 @@ def main():
     status_html = "✅ 達成" if html_ok else "🔴 要修正"
     detail_html = []
     if not html_res.get('has_h1', False):
-        detail_html.append("大見出し（第52回 聖サレジオ学園文化祭...）に `<h1>` タグが適用されていません．")
+        detail_html.append("大見出し（第12回 聖サレジオ学園ビブリオバトル大会...）に `<h1>` タグが適用されていません．")
     elif not html_res.get('headings_order_ok', False):
         detail_html.append("見出しの階層（`h1` ➔ `h2` ➔ `h3`）の順序が逆転したままです．")
     if html_res.get('invalid_p_in_ul', False):
