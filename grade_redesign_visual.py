@@ -509,11 +509,9 @@ def main():
         
     print("Grading completed. Report written to feedback.md")
     
-    # SまたはA評価で終了ステータス0, それ以外（不合格）なら終了ステータス1とする（ActionsでのIssue更新判定のため）
-    if total_score >= 8:
-        sys.exit(0)
-    else:
-        sys.exit(1)
+    # 後続のGitHub ActionsでのIssue投稿ステップを実行するため、常に正常終了とする
+    sys.exit(0)
+
 
 if __name__ == '__main__':
     main()
